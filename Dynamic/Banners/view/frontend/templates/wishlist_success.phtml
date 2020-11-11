@@ -1,0 +1,23 @@
+<div class="wishlist-messages wishlist-messages--fixed">
+    <span class="wishlist-messages-close">
+        <svg class="svg-icon">
+            <svg id="svg-close" viewBox="0 0 64.9 64.9">
+                <path d="M64.9 8.5L56.4 0 32.5 24 8.5 0 0 8.5l24 24L0 56.4l8.5 8.5 24-24 23.9 24 8.5-8.5-24-23.9"></path>
+            </svg>
+        </svg>
+    </span>
+    <div class="messages">
+        <span><?php echo $this->getName(); ?> has been added to your wishlist.</span>
+    </div>
+<script type="text/javascript">
+requirejs(['jquery'], function($){
+    jQuery( document ).ready(function() {
+        jQuery('.wishlist-messages-close').click(function(){
+            jQuery('.wishlist-messages').remove();
+        });
+        setTimeout(function(){ jQuery('.wishlist-messages').remove(); }, 3000);
+    });
+});
+</script>
+</div>
+
