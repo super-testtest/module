@@ -1,0 +1,10 @@
+<form id="custom-checkout-form" class="form" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+    <fieldset class="fieldset">
+        <!-- ko foreach: getRegion('custom-checkout-form-fields') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+    </fieldset>
+    <button type="button" data-bind="click: onSubmit" class="button action continue primary">
+        <span data-bind="i18n: 'Sign Up'"></span>
+    </button>
+</form>

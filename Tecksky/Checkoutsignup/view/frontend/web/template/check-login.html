@@ -1,0 +1,10 @@
+<!-- ko ifnot: isLogedIn-->
+<div id="checkout-step-title"
+     class="step-content"
+     data-role="content" data-bind="class: islogged">
+
+    <!-- ko foreach: getRegion('custom-checkout-form-container') -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <!--/ko-->
+</div>
+<!-- /ko -->
