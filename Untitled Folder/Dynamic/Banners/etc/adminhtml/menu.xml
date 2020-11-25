@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dynamic_Banners::banners" title="Dynamic" module="Dynamic_Banners" sortOrder="30" resource="Dynamic_Banners::banners"/>
+
+       	<add id="Dynamic_Banners::banners_manage" title="Banners" module="Dynamic_Banners" sortOrder="10" parent="Dynamic_Banners::banners" action="banners/index/" resource="Dynamic_Banners::manage"/>
+
+       	<add action="dynamic_homecategory/homecategory/index" id="Dynamic_Homecategory::dynamic_homecategory_homecategory" module="Dynamic_Homecategory" parent="Dynamic_Banners::banners" resource="Magento_Backend::content" sortOrder="7777" title="HomeCategory"/>
+
+       	<add action="dynamic_brands/brand/index" id="Dynamic_Brands::dynamic_brands_brand" module="Dynamic_Brands" parent="Dynamic_Banners::banners" resource="Magento_Backend::content" sortOrder="8888" title="Brand"/>
+
+       	<add action="dynamic_smallbanner/smallbanner/index" id="Dynamic_Smallbanner::dynamic_smallbanner_smallbanner" module="Dynamic_Smallbanner" parent="Dynamic_Banners::banners" resource="Magento_Backend::content" sortOrder="6666" title="Small Banner"/>
+
+       	<add action="dynamic_feedback/feedback/index" id="Dynamic_Feedback::dynamic_feedback_feedback" module="Dynamic_Feedback" parent="Dynamic_Banners::banners" resource="Magento_Backend::content" sortOrder="9999" title="Feedback"/>
+    </menu>
+</config>

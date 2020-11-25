@@ -1,0 +1,23 @@
+<?php 
+    $banners = $block->getCollection();
+?>
+
+<div class="main-banner">
+	<div class="main-banner-inner container">
+		<div class="banner-section-main">
+			<div class="spinner-wrapper">
+				<div class="spinner spinner--slider">Loading...</div>
+			</div>
+			<div class="main-banner-items">
+				<?php foreach ($banners as $banner) { ?>
+					<div class="banner-item">
+						<img data-lazy="<?php echo $block->getBannerMediaUrl() .'banners/'. basename($banner->getImage()) ?>">
+					</div>
+				<?php } ?>
+			</div>
+		</div>
+		<div class="banner-bottom-text">
+			<p>Welcome to HypeForType, it's like discovering an underground club where all the cool kids go, only here you don't have to wear tight jeans or have a funny haircut, just an appetite for beautifully crafted type! Discover more than 35,000 fonts...</p>
+		</div>
+	</div>
+</div>
