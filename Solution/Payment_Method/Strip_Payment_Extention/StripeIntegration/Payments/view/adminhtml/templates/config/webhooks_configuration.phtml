@@ -1,0 +1,55 @@
+<script>
+    require([
+        'jquery',
+        'prototype'
+    ],
+    function(jQuery)
+    {
+        var progressSpan = jQuery('#progress');
+
+        jQuery('#stripe_configure_webhooks').click(function ()
+        {
+
+            var params = {};
+            new Ajax.Request('<?php echo $block->getAjaxUrl() ?>', {
+                parameters:     params,
+                loaderArea:     false,
+                asynchronous:   true,
+                onCreate: function() {
+                    progressSpan.find('.configured').hide();
+                    progressSpan.find('.processing').show();
+                    jQuery('#configured_message').text('');
+                    document.getElementById("stripe_configure_webhooks").disabled = true;
+                },
+                onSuccess: function(response)
+                {
+                    progressSpan.find('.processing').hide();
+
+                    var resultText = '';
+                    if (response.status > 200) {
+                        resultText = response.statusText;
+                    } else {
+                        resultText = 'Success';
+                        progressSpan.find('.configured').show();
+                    }
+                    jQuery('#configured_message').text(resultText);
+                },
+                onComplete: function()
+                {
+                    document.getElementById("stripe_configure_webhooks").disabled = false;
+                }
+            });
+        });
+
+    });
+</script>
+
+<?php echo $block->getButtonHtml() ?>
+<span class="stripe-webhooks-config-admin" id="progress">
+    <img class="processing" hidden="hidden" alt="Configuring" style="margin:0 5px" src="<?php echo $block->getViewFileUrl('images/process_spinner.gif') ?>"/>
+    <img class="configured" hidden="hidden" alt="Configured" style="margin:-3px 5px" src="<?php echo $block->getViewFileUrl('images/rule_component_apply.gif') ?>"/>
+    <span id="configured_message"></span>
+</span>
+<p class="note">
+    <span><?php echo __('A webhook will automatically be configured in your Stripe account which will point to <a href="%1" target="_blank">%1</a>. Please ensure that this link is externally accessible. Existing webhook configurations will be upgraded. A reconfigure is necessary when you change your Stripe API keys or your website Base URL.', $block->webhooksSetup->getWebhookUrl()); ?></span>
+</p>

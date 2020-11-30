@@ -1,0 +1,3 @@
+.htacces
+=========
+gzip enable

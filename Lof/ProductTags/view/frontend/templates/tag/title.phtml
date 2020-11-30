@@ -1,0 +1,14 @@
+<?php if ($_tag = $block->getCurrentTag()): 
+ $collSize = $_tag->getProductCollection()->addAttributeToFilter('visibility', \Magento\Catalog\Model\Product\Visibility::VISIBILITY_BOTH)->addAttributeToFilter('status', ['eq' => 1])->getSize();                                          
+?>
+
+	<div class="top-main-title">
+	<div class="top-main-title-inner container">
+		<div class="page-title-wrapper">
+    		<h1 class="page-title" id="page-title-heading" aria-labelledby="page-title-heading toolbar-amount">
+        		<span class="base" data-ui-id="page-title-wrapper">Keyword results for: <?php echo $_tag->getTagTitle(); ?></span>
+        	</h1>
+    	</div>
+	</div>
+</div>
+<?php endif; ?>

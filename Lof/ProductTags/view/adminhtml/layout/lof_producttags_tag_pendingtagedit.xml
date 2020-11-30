@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="admin-2columns-left">
+	<body>
+		<!-- <referenceContainer name="content">
+            <block class="Lof\ProductTags\Block\Adminhtml\Pendingtag" name="pendingtag_listiong"/>
+        </referenceContainer> -->
+        <referenceContainer name="content">
+            <block class="Lof\ProductTags\Block\Adminhtml\Pendingtag\Edit" name="lof_producttags_pendingtag_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Lof\ProductTags\Block\Adminhtml\Pendingtag\Edit\Tabs" name="edit_tabs">
+                <block class="Lof\ProductTags\Block\Adminhtml\Pendingtag\Edit\Tab\Main" name="lof_producttags_pendingtag_edit_tab_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">lof_producttags_pendingtag_edit_tab_main</argument>
+                </action>
+                 <action method="addTab">
+                    <argument name="name" xsi:type="string">admin_product_tag</argument>
+                    <argument name="block" xsi:type="array">
+                        <item name="label" xsi:type="string">Products Tagged by Administrators </item>
+                        <item name="title" xsi:type="string">Products Tagged by Administrators</item>
+                        <item name="url" xsi:type="url" path="lof_producttags/tag/pendingtagadmin"></item>
+                        <item name="class" xsi:type="string">ajax</item>
+                    </argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">customers_tag</argument>
+                    <argument name="block" xsi:type="array">
+                        <item name="label" xsi:type="string">Customers Submitted this Tag</item>
+                        <item name="title" xsi:type="string">Customers Submitted this Tag</item>
+                        <item name="url" xsi:type="url" path="lof_producttags/tag/pendingtagcustomers"></item>
+                        <item name="class" xsi:type="string">ajax</item>
+                    </argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">product_customers_tag</argument>
+                    <argument name="block" xsi:type="array">
+                        <item name="label" xsi:type="string">Products Tagged by Customers</item>
+                        <item name="title" xsi:type="string">Products Tagged by Customers</item>
+                        <item name="url" xsi:type="url" path="lof_producttags/tag/pendingtagproducts"></item>
+                        <item name="class" xsi:type="string">ajax</item>
+                    </argument>
+                </action>
+            </block>
+        </referenceContainer>
+	</body>
+</page>

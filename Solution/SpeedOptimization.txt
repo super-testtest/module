@@ -1,0 +1,27 @@
+.htacces
+=========
+ gzip enable
+
+Admin
+======
+
+ css
+ ====
+ minify --yes
+ merge -- yes
+
+ Js
+ ======
+ Minify JavaScript Files -- yes
+ Move JS code to the bottom of the page --yes
+
+
+ Image
+ ==========
+ optimize image
+
+
+ Collection
+ ============
+
+ AVoid query on phtml file.Collection should be get from Model or Block or helper.

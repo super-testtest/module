@@ -1,0 +1,74 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php /** @var $block \Magento\Shipping\Block\Adminhtml\View */ ?>
+<?php $order = $block->getOrder();
+       // / echo "<pre>";print_r($order->debug());die;
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+ ?>
+<?php if ($order->getIsVirtual()) : return '';endif; ?>
+
+<?php /* Shipping Method */ ?>
+<div class="admin__page-section-item order-shipping-method">
+    <div class="admin__page-section-item-title">
+        <span class="title"><?= /* @escapeNotVerified */ __('Shipping &amp; Handling Information') ?></span>
+    </div>
+    <div class="admin__page-section-item-content">
+        <?php  if ($order->getTracksCollection()->count()) : ?>
+            <p><a href="#" id="linkId" onclick="popWin('<?= /* @escapeNotVerified */ $this->helper('Magento\Shipping\Helper\Data')->getTrackingPopupUrlBySalesModel($order) ?>','trackorder','width=800,height=600,resizable=yes,scrollbars=yes')" title="<?= /* @escapeNotVerified */ __('Track Order') ?>"><?= /* @escapeNotVerified */ __('Track Order') ?></a></p>
+        <?php endif; ?>
+        <?php if ($order->getShippingDescription()): ?>
+            <strong><?= $block->escapeHtml($order->getShippingDescription()) ?></strong>
+
+            <?php if ($this->helper('Magento\Tax\Helper\Data')->displayShippingPriceIncludingTax()): ?>
+                <?php $_excl = $block->displayShippingPriceInclTax($order); ?>
+            <?php else: ?>
+                <?php $_excl = $block->displayPriceAttribute('shipping_amount', false, ' '); ?>
+            <?php endif; ?>
+            <?php $_incl = $block->displayShippingPriceInclTax($order); ?>
+
+            <?= /* @escapeNotVerified */ $_excl ?>
+            <?php if ($this->helper('Magento\Tax\Helper\Data')->displayShippingBothPrices() && $_incl != $_excl): ?>
+                (<?= /* @escapeNotVerified */ __('Incl. Tax') ?> <?= /* @escapeNotVerified */ $_incl ?>)
+            <?php endif; ?>
+                <?php if($order->getCustomShippingMethod()!='') :?>
+                    <br><br><p><b>More Information :-</b></p><hr>
+                    <?php if($order->getCustomShippingMethod()!=''):?>
+                        <p><b>Shipping Method :</b><?php echo $order->getCustomShippingMethod(); ?></p>
+                    <?php endif;?>
+                    <?php if($order->getCustomShippingService()!=''):?>
+                        <p><b>Shipping Service :</b><?php echo $order->getCustomShippingService(); ?></p>
+                    <?php endif;?>
+                    <?php if($order->getAccountNumber()!=''):?>
+                        <p><b>Account Number :</b><?php echo $order->getAccountNumber(); ?></p>
+                    <?php endif;?>
+                     <?php if($order->getAccountName()!=''):?>
+                        <p><b>Account Name :</b><?php echo $order->getAccountName(); ?></p>
+                    <?php endif;?>
+                     <?php if($order->getAccountAddress()!=''):?>
+                        <p><b>Account Address :</b><?php echo $order->getAccountAddress(); ?></p>
+                    <?php endif;?>
+                      <?php if($order->getCustomShippingCity()!=''):?>
+                        <p><b>City :</b><?php echo $order->getCustomShippingCity(); ?></p>
+                    <?php endif;?>
+                    <?php if($order->getCustomShippingState()!=''):?>
+                        <p><b>State :</b><?php echo $order->getCustomShippingState(); ?></p>
+                    <?php endif;?>
+                    <?php if($order->getCustomShippingZipcode()!=''):?>
+                        <p><b>Zipcode :</b><?php echo $order->getCustomShippingZipcode(); ?></p>
+                    <?php endif;?>
+                    <?php if($order->getCustomShippingCountry()!=''):?>
+                        <p><b>Country :</b><?php echo $objectManager->create('\Magento\Directory\Model\Country')->load($order->getCustomShippingCountry())->getName(); ?></p>
+                    <?php endif;?>
+                <?php endif;?>
+        <?php else: ?>
+            <?= /* @escapeNotVerified */ __('No shipping information available') ?>
+        <?php endif; ?>
+    </div>
+</div>

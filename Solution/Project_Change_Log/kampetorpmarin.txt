@@ -1,0 +1,74 @@
+kampetorpmarin
+
+=========================
+
+1. footer dropdown not working for mobile
+
+(Table:core_config_data) : Path:design/head/includes
+=================================================
+
+	$(".footer-middle .block-title").click(function(){
+	   $(this).next().toggle();
+	   $(this).toggleClass('title-active');
+	});
+
+
+
+2. 2 section repace with top to bottom and bottom to top
+=>
+    change content of home page
+    ==================================
+    identefier:kampetorp_marin
+
+    add static block
+    ====================
+
+    identefier:sidebar-custom-section
+
+
+    css changes
+    =================
+    /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/web/css/custom.css
+
+    Template changes
+    ====================
+
+    /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/Smartwave_Porto/templates/html/footer.phtml
+
+3. 2 product showing in mobile ( for homepage & category page )
+
+
+   css changes
+   =================
+   /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/web/css/custom.css
+
+
+4. Category Side bar on category page not showing for mobile ( https://prnt.sc/rf3f7q )
+
+   css changes
+   =================
+   /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/web/css/custom.css
+
+
+
+5. Disable Load more for category page for mobile 
+
+   template changes
+   ==================
+   /run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/Magento_Catalog/templates/product/list.phtml
+
+
+	jQuery(window).load(function(){
+	  if(jQuery(window).width()>=768 && jQuery(".infinite-loader").length==0){
+	       jQuery('<div class="infinite-loader"><span class="loading"><i class="ajax-loader small animate-spin"></i><?php echo __("Loading ..."); ?></span><a href="javascript:void(0)" class="btn-load-more"><?php echo __("Load More ..."); ?></a></div>').insertAfter('#layer-product-list .products-grid');
+	  }
+	});
+	jQuery(window).resize(function() {
+	    if(jQuery(window).width()>=768 && jQuery(".infinite-loader").length==0){
+	      jQuery('<div class="infinite-loader"><span class="loading"><i class="ajax-loader small animate-spin"></i><?php echo __("Loading ..."); ?></span><a href="javascript:void(0)" class="btn-load-more"><?php echo __("Load More ..."); ?></a></div>').insertAfter('#layer-product-list .products-grid');
+	    }else{
+	      if(jQuery(".infinite-loader").length >0){
+	        jQuery('.infinite-loader').remove();
+	      }
+	    }
+	});

@@ -1,0 +1,19 @@
+Discount Popup on cart and checkout page
+===========================================
+
+	Layout Changes
+	=====================
+	/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/iconnect/app/design/frontend/Mgs/mgsblank_child/Magento_Checkout/layout/checkout_cart_index.xml
+
+	/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/iconnect/app/design/frontend/Mgs/mgsblank_child/Magento_Checkout/layout/checkout_index_index.xml
+
+
+	Template Changes
+	=======================
+	/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/iconnect/app/design/frontend/Mgs/mgsblank_child/Magento_Checkout/templates/popup.phtml
+
+
+	Css Changes
+	==================
+	
+	/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/iconnect/app/design/frontend/Mgs/mgsblank_child/web/css/styles.css

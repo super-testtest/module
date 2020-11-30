@@ -1,0 +1,45 @@
+
+================================================================================================================
+
+
+https://www.cloudways.com/blog/migrate-from-magento-1-to-magento-2/
+
+=====================================================================================================================
+
+
+1)COMPOSER_MEMORY_LIMIT=-1 php /usr/bin/composer require magento/data-migration-tool:2.3.3
+
+2)
+ 
+	vendor/magento/data-migration-tool -- Module File change
+	=================================================================
+
+	/opt/lampp/htdocs/hyperfortype_233_migrate_latest/vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.1/config.xml.dist -- rename config.xml.dist to config.xml
+
+	/opt/lampp/htdocs/hyperfortype_233_migrate_latest/vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.1/map.xml.dist -- rename map.xml.dist to map.xml
+
+	/opt/lampp/htdocs/hyperfortype_233_migrate_latest/vendor/magento/data-migration-tool/etc/opensource-to-opensource/customer-attribute-groups.xml.dist -- rename customer-attribute-groups.xml.dist to customer-attribute-groups.xml
+
+	/opt/lampp/htdocs/hyperfortype_233_migrate_latest/vendor/magento/data-migration-tool/etc/opensource-to-opensource/eav-attribute-groups.xml.dist -- rename eav-attribute-groups.xml.dist to eav-attribute-groups.xml
+
+	/opt/lampp/htdocs/hyperfortype_233_migrate_latest/vendor/magento/data-migration-tool/etc/opensource-to-opensource/map-customer.xml.dist -- rename map-customer.xml.dist to map-customer.xml
+
+
+3)
+	php bin/magento migrate:settings --reset /opt/lampp/htdocs/hyperfortype_233_migrate_latest/vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.1/config.xml -a
+
+
+
+4)
+	php bin/magento migrate:data --reset /opt/lampp/htdocs/hyperfortype_233_migrate_latest/vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.1/config.xml -a
+
+
+
+After add new order or customer  (Existing Migration )
+=================================================================
+
+php bin/magento migrate:delta /opt/lampp/htdocs/magento233/vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.4.3/config.xml -a
+
+
+
+

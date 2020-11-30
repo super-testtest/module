@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+
+		<move element="page.main.title" destination="top.category.title.inner" before="-"/>
+
+		<referenceContainer name="page.top">
+         	<container name="top.category.title" as="top.category.title" htmlClass="top-main-title" htmlTag="div">
+	         	<container name="top.category.title.inner" as="top.category.title.inner" htmlClass="top-main-title-inner container" htmlTag="div"></container>
+         	</container>
+        </referenceContainer>
+
+        <referenceContainer name="content">
+		    <block class="Magento\Framework\View\Element\Template" name="tag.list" template="Lof_ProductTags::tag/list.phtml" />
+        </referenceContainer>
+	</body>
+</page>

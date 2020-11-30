@@ -1,0 +1,9 @@
+Following Composer install
+=================================
+
+composer require stripe/stripe-php
+
+
+
+IF any error Occured install Manualy
+=======================================

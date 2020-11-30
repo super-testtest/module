@@ -1,0 +1,21 @@
+<?php
+ if($block->getOrder()->getDateCustomShippingField()) { ?>
+<div class="admin__field admin__page-section-item">
+		<div class="admin__page-section-item-title">
+                    <span class="title" style="font-size:15px;">SHIP COLLECT</span>
+                    <div class="actions"><a class="editdate" href="javascript:void(0);">Edit</a></div>
+		    <div class="admin__field-control">
+                   	<?php echo $block->getOrder()->getDateCustomShippingField(); ?>
+               	    </div>
+		</div>                
+</div>
+
+<?php $orderId = $block->getOrder()->getId(); ?>
+<div class="deleivery-date-update" style="display:none;margin-top:10px;">
+<form method="GET" action="<?php echo $this->getUrl('dckap/order/deliverydatesave'); ?>" enctype="multipart/form-data">
+	<input type="hidden" name="order_id"value="<?php echo $orderId; ?>"/>
+	<input type="text" class="admin__control-text" name="date_custom_shipping_field" value="<?php echo $block->getOrder()->getDateCustomShippingField(); ?>" placeholder="SHIP COLLECT" id="date_custom_shipping_field" autocomplete="off" />
+	<input type="submit" name="submit" value="Submit" class="action-default edit primary">  
+</form>
+</div>
+<?php } ?>

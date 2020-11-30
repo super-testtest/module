@@ -1,0 +1,28 @@
+<?php 
+$objectManager   = \Magento\Framework\App\ObjectManager::getInstance();
+$tagCollection = $objectManager->get('Lof\ProductTags\Model\Tag')->getCollection()->addFieldToFilter('status', 1);
+$tagCollection->setPageSize(100);
+
+?>
+<?php $classes = [
+    'tag-cloud__link--high',
+    'tag-cloud__link--medium',
+    'tag-cloud__link--low',
+]; ?>
+<section class="wrapper-common">
+	<div class="container">
+		<div class="tag-cloud tag-cloud--center">
+			<ul class="tag-cloud__wrapper">
+				<?php if(count($tagCollection) > 0) { ?>
+					<?php foreach ($tagCollection as $tagData) { 
+						?>
+							<li>
+								<a class="tag-cloud__link <?= $classes[array_rand($classes)];?>" href="<?php echo $this->getBaseUrl().'tags/'.$tagData->getIdentifier(); ?>"><?php echo ucfirst($tagData->getTagTitle()) ?></a>
+							</li>
+					<?php } ?>
+				<?php } ?>
+			</ul>
+			<p class="show show-more">View More</p>
+		</div>
+	</div>
+</section>

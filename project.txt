@@ -1,0 +1,1068 @@
+100939433639
+MHMcEm#*#990
+
+
+Testing Email
+========================
+
+camit1dkdev1@gmail.com  - camit1dk@123
+camit1dkdev2@gmail.com  - camit1dk2@123
+camit1dkdev3@gmail.com  - camit1dk3@123
+camit1dkdev4@gmail.com  - camit1dk4@123
+
+
+Bulk Project 
+================
+slack login:https://app.slack.com/
+Slaklogin	ncmediaworkspace.slack.com	info@dynamicdreamz.com	dynamic@123
+
+
+https://app.teamwave.com/pm/#/projects/29540/taskgroups
+
+free task link: https://app.teamwave.com/pm/#/projects/39742/taskgroups 
+
+TemporaryEmailforwork
+=======================
+(10:21)DhavalVaghela(Magento-TL):camit1dkdev1@gmail.com-camit1dk@123
+(10:21)DhavalVaghela(Magento-TL):temparoryaemailidusekarne
+
+
+Ess login
+================
+http://192.168.0.74/ESS/
+
+
+PmsLogin
+===================
+
+https://projects.dynamicdreamz.com/admin/login.php
+urPMSID&Passwordisvishalsahodiya-vishal@321
+
+Officalemailid
+========================
+programmer61.dynamicdreamz@gmail.com	programmer@321
+
+
+all use email
+==================
+devdyna@gmail.com  gaurav@devdyna1
+
+marketplace login details
+----------------------------
+devdyna@gmail.com / admin@1234
+
+
+Alkalineworld
+=================================================================================================================================
+smb://ddserver/data/magento/alkalineworld/Resource/access-details--docs
+
+
+staging
+==================================================================================================================================
+http://116.90.50.12/~alkaline/admin
+
+admin/amdin@123
+
+
+cpanel
+=================
+https://vmcp03.premium-hosting.com.au:2083/
+username:alkaline
+pass:www.DynamicDreamz.com
+
+ftp
+===============
+116.90.50.12
+username:alkaline
+pass:www.DynamicDreamz.com
+/public_html
+
+
+Database
+==================
+alkaline_m2
+
+alkaline_m2/devadmin@123
+
+
+starshipitshipping
+=====================
+info@alkalineworld.com.au
+alkalineworld@#$123
+
+
+frontendaddressstarshipit
+==================================
+(14:39:47) Dhaval Vaghela(Magento-TL): Address : Bardone
+(14:39:50) Dhaval Vaghela(Magento-TL): City : BArdon
+(14:39:54) Dhaval Vaghela(Magento-TL): State: QLD
+(14:40:00) Dhaval Vaghela(Magento-TL): Zip : 4065
+
+
+starshipitadmin
+======================
+Apikey:bfb08b3de40c4d17a283a673cd269877
+
+
+
+adminuser
+====================
+alkaline
+alkalineworld@#$123
+
+
+
+Live
+===================================================================================================================================
+https://alkalineworld.com.au/admin34j10pqW
+devadmin/devadmin@123
+
+ssh
+===========
+54.79.119.60
+ec2-user
+
+
+Database
+================
+alkaline_magento
+
+keyfile:smb://192.168.0.1/data/magento/alkalineworld/Resource/access-details
+
+Local
+==================
+http://192.168.0.29/alkalineupgrade/project/
+
+
+
+
+
+
+
+
+
+
+ftpextionpath
+==================
+
+php/usr/bin/subl
+xml/usr/bin/subl
+phtml/usr/bin/subl
+log/usr/bin/subl
+js/usr/bin/subl
+txt/usr/bin/subl
+conf/usr/bin/subl
+.htaccess/usr/bin/subl
+./usr/bin/subl
+json/usr/bin/subl
+
+
+
+#orderId:28000312-3
+
+
+bQ---billing_address_id---bqpohochiyo.
+
+
+
+
+customer_is_guest
+customer_group_id
+
+
+shipping_method
+
+
+
+
+Project:powerbicycle
+====================
+
+poweredbicycles.co.uk
+
+Hello,
+
+poweredbicycles
+------------------------
+
+Fromyourprovidedpackageswehavesetupthesite.Pleasecheckbelowlink:
+
+Url:http://dddemo.net/magento/poweredbicyclesn/
+AdminUrl:http://dddemo.net/magento/poweredbicyclesn/index.php/powadmin
+Username:ddadmin
+Password:ddadmin@123
+
+-------------------------------------------------------------------------------
+ThissiteavailableinMagento1.9.2.4version.
+ProductsAvailable:383
+AvailableShippingmethod:FlatRate
+AvailablePaymentMethod:SavedCC,Check/Moneyorder
+
+Tasklist:
+-------------------------------------------------------------------------------
+--Newissuefound:
+1.Inthehomepage,Someproducts&blogsarenotshowingproperly.
+2.Someissueisthereinthemobile/Responsiveview.
+3.Blogpagenotworking
+4.Testimonialfunctionalitymissing.
+5.GalleryFunctionalitymissing.
+6.Contactformmissing.
+--DataMigration:
+1.AboutOrders&Customers:
+Wehavecheckedtheadminpanelbutnotseenanyorder/customerdetailspagewherewecancheckforifweexportthisdataornot.
+2.Aboutproducts:
+Wehavetriedtoexportproductdatabutit'snotworkingbutifyouneedthisallproductthenwecanaddinourMagentosite.
+3.AboutCmspage:
+Wehavealsocheckedthecmspagelike"AboutUs,FutureEvents,RepairstoExistingBikes-OursorNot,ElectricBicycleBuyer'sGuide,etc.."andyeswecanaddthisdatainourMagentosite.
+4.Testimonial&BlogData:
+wehavecheckedthetestimonialandblogdataandyeswecanaddthisdatainourMagento2site.
+**Rightnowthereare383productsavailableinourMagentositesocanyoupleasecheckandletmeknowifit'sokay?orneedtoimportfromthelivesite?
+--LanguageTranslation
+1.WehaveseenthatinthenewMagentositetherearethreeextrastorescreatedforGerman,Spanish,Russianbuttheirtranslationisnotworkingproperly.
+--UpgradeMagentoversion:
+1.RightnowourMagentoversionis1.9.2.4whichisoutdatedsoforsecuritypurposeneedtpUpgradeMagentoversionto1.9.4.3.
+
+
+
+mail:bdm@dynamicdreamz.com
+cc:info@dynamicdreamz.com
+programmer10@dynamicdreamz.com
+
+
+
+
+
+
+
+
+
+
+Filelog
+====================
+
+1.Inthehomepage,Someproducts&blogsarenotshowingproperly.
+
+/opt/lampp/htdocs/poweredbicyclesn/app/design/frontend/tm_themes/bikebird/template/aw_blog/widget_post.phtml
+/opt/lampp/htdocs/poweredbicyclesn/app/design/frontend/tm_themes/bikebird/template/catalog/product/widget/sale/sale_carousel_list.phtml
+/opt/lampp/htdocs/powerbicycle/app/design/frontend/tm_themes/bikebird/template/catalog/product/widget/new/content/new_grid.phtml
+/opt/lampp/htdocs/poweredbicyclesn/skin/frontend/base/default/css/owlcarousel/owl.theme.css
+
+
+csschanges
+===============
+/opt/lampp/htdocs/powerbicycle/skin/frontend/tm_themes/bikebird/css/custom.css
+
+
+layoutchanges
+=======================
+/opt/lampp/htdocs/powerbicycle/app/design/frontend/tm_themes/bikebird/layout/local.xml
+
+
+blockchanges
+================
+1)contact_block
+
+<p><iframestyle="border:0;"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2406.945625147837!2d-1.2686082339012412!3d52.89540237988698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879e8eeb79e40e1%3A0x997c5ae7a6e1b914!2sMain+St%2C+Long+Eaton%2C+Nottingham+NG10+1GN!5e0!3m2!1sen!2suk!4v1489238772853"height="450"width="100%"></iframe></p>
+<p>&nbsp;</p>
+<divclass="col-md-3">
+					
+<divclass="textwidgetpanelwidget"><spanclass="icon-container"><spanclass="fafa-home"></span></span>
+<b>poweredbicycles.co.uk</b><br>
+<div>HSCMotorFactorsLtd(ScattergoodsmotorsSparesforallcarparts)</div>
+<div>50-52MainStreet</div>
+<div>LongEaton</div>
+<div>Nottingham</div>
+<div>EastMidlands</div>
+<div>NG101GN</div>
+<div>UK</div>
+<br>
+<br>
+						<spanclass="icon-container"><spanclass="fafa-phone"></span></span><b>01159727201<br>
+
+					
+						<br>
+<spanclass="icon-container"><spanclass="fafa-envelope"></span></span><ahref="mailto:sales@poweredbicycles.co.uk">sales@poweredbicycles.co.uk</a>
+<br>
+<br>
+
+<br>
+					</b></div><b>
+				
+				</b></div>
+<b>
+				<divclass="col-md-9">
+					<divclass="wpcf7"id="wpcf7-f5-o1"lang="en-US"dir="ltr">
+						
+					</div>
+				</div>
+			</b>
+
+
+
+
+
+terms-and-conditions
+
+
+
+
+
+
+
+testingmagento1007@gmail.com
+info#1234
+
+=================
+
+
+cd/opt/lampp/htdocs/hypefortype/
+
+indexingkebadedocommandrunkarna
+
+phpbin/magentoc:f
+sudochmod-R777var/generated/pub/
+
+
+30840
+
+
+change log
+============
+/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/sambazonmultisite/app/code/Dynamic/DynamicVideos/Setup/UpgradeSchema.php
+/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/sambazonmultisite/app/code/Dynamic/DynamicVideos/etc/module.xml
+/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/sambazonmultisite/app/code/Dynamic/DynamicVideos/Block/Adminhtml/Showvideos/Grid.php
+/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/sambazonmultisite/app/code/Dynamic/DynamicVideos/Block/Adminhtml/Renderer/Webpformatimage.php
+/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/sambazonmultisite/app/code/Dynamic/DynamicVideos/Block/Adminhtml/Dynamicvideos/Edit/Tab/Main.php
+/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/sambazonmultisite/app/code/Dynamic/DynamicVideos/Controller/Adminhtml/dynamicvideos/Save.php
+/run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/sambazonmultisite/app/code/Dynamic/DynamicVideos/view/frontend/templates/home-page.phtml
+
+
+
+ UPDATE eav_entity_store INNER JOIN eav_entity_type ON eav_entity_type.entity_type_id = eav_entity_store.entity_type_id SET eav_entity_store.increment_last_id='XXXXXXXXXX' WHERE eav_entity_type.entity_type_code='order';UPDATE eav_entity_store INNER JOIN eav_entity_type ON eav_entity_type.entity_type_id = eav_entity_store.entity_type_id SET eav_entity_store.increment_last_id='XXXXXXXXXX' WHERE eav_entity_type.entity_type_code='order';
+
+
+
+
+Log Write
+===============
+$writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');
+$logger = new \Zend\Log\Logger();
+$logger->addWriter($writer);
+$logger->info('Your text message');
+
+
+
+
+9537933533
+Pare$3533
+
+
+World Pay
+================
+merchand id :506fbaf3-85a4-42d9-8f99-efa930d6ccc8
+
+secret key:T_S_b46ebe2d-d6fa-4f3d-b67e-095a8f3a0431
+client key:T_C_60487557-5ea8-4c37-b793-bb4f4ba662db
+
+https://online.worldpay.com/settings/general
+
+testing credential :http://support.worldpay.com/support/kb/bg/testandgolive/tgl0000.html?_ga=2.138414259.1866099693.1566463272-2026890985.1566463272
+
+
+
+Freshdesk
+==============
+domain:https://devdynahelp.freshdesk.com/
+pass:admin@123
+
+
+
+Alkaline
+===================
+
+54.79.119.60  ec2-user  N/A - use private key dynamic@123
+
+/opt/lampp/htdocs/alkaline/alkline.ppk
+
+
+
+hyperfortype
+======================
+
+encryptkey magento1 :bd1aa47c3e7466180d16abb5195fcbfa
+
+
+
+
+
+Audiowork Email Format
+==============================
+
+Hello,
+
+Please find below an update on the task: https://gaurav.audionetworx1.timmeserver.de/de
+-----------------------------------------------------------------------------------------------------------------------------
+
+File List that has been changed :
+--------------------------------------------------------------------------------
+/var/www/clients/client1/web29/web/app/design/frontend/thebell/thebell4/web/css/pc_product_custom.css
+
+On configurator pages, we need to reduce the height of the summary slider in mobile view. Below 768px please reduce h1 to 14px and push everything closer together as show here:
+
+=> It's Done
+Please Check : https://gaurav.audionetworx1.timmeserver.de/de/digital-audio-workstation-konfigurator.html
+
+
+Paypal Product:
+https://gaurav.audionetworx1.timmeserver.de/de/rme-babyface-pro.html
+
+
+
+Origional Site link:https://www.da-x.de/de/digital-audio-workstation-konfigurator.html
+
+
+Tracker Sheet Link:
+========================
+https://docs.google.com/spreadsheets/d/13pAsl-H-fM_QMYQ5TdBdXnSWle1uT7FYkGa5aSF-K_Y/edit#gid=769706695
+
+
+
+
+Project
+===========
+
+1. Dev Store setup Similar to https://bulknaturaloils.com/
+2. Theme development on Dev store.
+3. Weekly progress update with link to test
+4. Feedback handling
+5. Deployment on your store
+6. Make sure all pages are SEO optimized
+7. Create product page templates
+8. Make sure all menu bar are organized
+9. Test to make sure checkout and payment gateway is working properly
+10. Customer accounts should be working properly database
+
+
+
+
+Please create development store on your server for review
+
+Please follow the below development process.
+
+Phase - 1
+1) Setup magento 2.x store on deve server
+2)  Header/Footer Navigation and Home page design integration https://bulknaturaloils.com/
+3) Product list and product detail page integraton following the https://bulknaturaloils.com/
+   Use the product form https://bulknaturaloils.com/ to make it look like exact same as reference sie
+4) Create cart page
+Phase - 2
+5) Setup one page checkout with test mode payment and shipping methods
+Note: We will need payment gateway and shipping rate information.
+6) Login/Signup page
+7) Setup My account pages
+8) Create content based pages
+
+Phase - 3
+9) Blog Setup
+QA and fixes
+
+Need to complete within 1.5 week.
+
+
+
+
+
+Fontend Link:http://web2.dddemo.net/bulknaturaloils/
+
+admin Link:http://web2.dddemo.net/bulknaturaloils/admin
+
+admin user :admin
+admin pass :admin@123
+
+
+
+
+
+
+
+
+
+
+
+Phase - 1
+1) Setup magento 2.x store on deve server
+2)  Header/Footer Navigation and Home page design integration https://bulknaturaloils.com/
+3) Product list and product detail page integraton following the https://bulknaturaloils.com/
+   Use the product form https://bulknaturaloils.com/ to make it look like exact same as reference sie
+4) Create cart page
+Phase - 2
+5) Setup one page checkout with test mode payment and shipping methods
+Note: We will need payment gateway and shipping rate information.
+6) Login/Signup page
+7) Setup My account pages
+8) Create content based pages
+
+Phase - 3
+9) Blog Setup
+QA and fixes
+
+Need to complete within 1.5 week.
+
+
+
+
+
+Databse issue
+==================
+
+#1227 - Access denied; you need (at least one of) the SUPER privilege(s) for this operation
+DEFINER=CURRENT_USER*/
+
+
+DEFINER=CURRENT_USER*/   replace with   DEFINER=CURRENT_USER*/
+
+
+
+
+Paypall Buyer Credential
+============================
+camit1dk-buyer@gmail.com
+admin@123
+
+
+Paypal Merchant Account
+========================
+
+merchant mail : 
+devtestpro@gmail.com
+
+username: 
+devtestpro_api1.gmail.com
+Password: 
+YPKRL5MVHETDW8MV
+Signature: 
+AGDCcKtP7R4eJmVDXJXTC83ZHtDKABbejIa5zVfRiBhUpZYzaoTFoKw4
+
+
+
+Strip account
+============
+https://dashboard.stripe.com/login
+email:camit1dkdev1@gmail.com
+pass:4*ElH'"<+;?7_4K
+
+
+public key :pk_test_v3djnHlwLMbOtrbeUSOyARrB00CBM0qT6k
+
+secret key :sk_test_Y8CLS7Ej5nPkILrDFsR2dRvP00yuKxyo9q
+            
+
+Composer Strip
+===============
+
+composer require stripe/stripe-php
+
+
+Address
+=======
+
+25737 US Rt 11, Evans Mills NY 13637
+
+
+
+Task link
+===============
+https://docs.google.com/spreadsheets/d/1hV0kepgnk5uREDazqG6Ue94KhFpbEFPr3GrRqf6ZAQc/edit?ts=5e54aa95#gid=0
+
+
+
+
+Speed Optimization
+=======================
+
+
+layout Changes
+=============
+/opt/lampp/htdocs/bulknaturaloils/app/design/frontend/Bulknaturaloils/theme/Magento_Theme/layout/default_head_blocks.xml
+-------------------------------------------------------
+<remove src="fonts/opensans/light/opensans-300.woff2"/>
+<remove src="fonts/opensans/regular/opensans-400.woff2"/>
+<remove src="fonts/opensans/semibold/opensans-600.woff2"/>
+<remove src="fonts/opensans/bold/opensans-700.woff2"/>
+<remove src="fonts/Luma-Icons.woff2"/>
+
+
+backend Changes
+-------------------------------
+
+js
+======
+
+Move JS code to the bottom of the page :YES
+
+css
+=======
+
+Merge CSS Files :
+
+
+
+<div class="block-title"><strong>Promotions</strong></div>
+<ul>
+<li><a id="openCoupon" href="javascript:void(0);">Coupon Codes</a></li>
+<li><a href="#">New Products</a></li>
+</ul>
+
+
+
+
+Bulknatural 
+==============
+
+Following Module disable
+==========================
+
+php bin/magento module:disable -f Magento_Inventory Magento_InventoryAdminUi Magento_InventoryApi Magento_InventoryBundleProduct Magento_InventoryBundleProductAdminUi Magento_InventoryCatalog Magento_InventorySales Magento_InventoryCatalogAdminUi Magento_InventoryCatalogApi Magento_InventoryCatalogSearch Magento_InventoryConfigurableProduct Magento_InventoryConfigurableProductAdminUi Magento_InventoryConfigurableProductIndexer Magento_InventoryConfiguration Magento_InventoryConfigurationApi Magento_InventoryGroupedProduct Magento_InventoryGroupedProductAdminUi Magento_InventoryGroupedProductIndexer Magento_InventoryImportExport Magento_InventoryIndexer Magento_InventoryLowQuantityNotification Magento_InventoryLowQuantityNotificationAdminUi Magento_InventoryLowQuantityNotificationApi Magento_InventoryMultiDimensionalIndexerApi Magento_InventoryProductAlert Magento_InventoryReservations Magento_InventoryReservationsApi Magento_InventoryCache Magento_InventorySalesAdminUi Magento_InventorySalesApi Magento_InventorySalesFrontendUi Magento_InventoryShipping Magento_InventorySourceDeductionApi Magento_InventorySourceSelection Magento_InventorySourceSelectionApi Magento_InventoryShippingAdminUi Magento_InventoryDistanceBasedSourceSelectionAdminUi Magento_InventoryDistanceBasedSourceSelectionApi Magento_InventoryElasticsearch Magento_InventoryExportStockApi Magento_InventoryReservationCli Magento_InventoryExportStock Magento_CatalogInventoryGraphQl Magento_InventorySetupFixtureGenerator Magento_InventoryAdvancedCheckout Magento_InventoryDistanceBasedSourceSelection Magento_InventoryRequisitionList Magento_InventoryGraphQl
+
+
+
+
+
+
+
+kampetorpmarin
+
+=========================
+
+1. footer dropdown not working for mobile
+
+(Table:core_config_data) : Path:design/head/includes
+=================================================
+
+	$(".footer-middle .block-title").click(function(){
+	   $(this).next().toggle();
+	   $(this).toggleClass('title-active');
+	});
+
+
+
+2. 2 section repace with top to bottom and bottom to top
+=>
+    change content of home page
+    ==================================
+    identefier:kampetorp_marin
+
+    add static block
+    ====================
+
+    identefier:sidebar-custom-section
+
+
+    css changes
+    =================
+    /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/web/css/custom.css
+
+    Template changes
+    ====================
+
+    /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/Smartwave_Porto/templates/html/footer.phtml
+
+3. 2 product showing in mobile ( for homepage & category page )
+
+
+   css changes
+   =================
+   /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/web/css/custom.css
+
+
+4. Category Side bar on category page not showing for mobile ( https://prnt.sc/rf3f7q )
+
+   css changes
+   =================
+   /run/user/1001/gvfs/smb-share:server=dd-33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/web/css/custom.css
+
+
+
+5. Disable Load more for category page for mobile 
+
+   template changes
+   ==================
+   /run/user/1001/gvfs/smb-share:server=192.168.0.33,share=htdocs/kampetorpmarin/app/design/frontend/Smartwave/porto/Magento_Catalog/templates/product/list.phtml
+
+
+	jQuery(window).load(function(){
+	  if(jQuery(window).width()>=768 && jQuery(".infinite-loader").length==0){
+	       jQuery('<div class="infinite-loader"><span class="loading"><i class="ajax-loader small animate-spin"></i><?php echo __("Loading ..."); ?></span><a href="javascript:void(0)" class="btn-load-more"><?php echo __("Load More ..."); ?></a></div>').insertAfter('#layer-product-list .products-grid');
+	  }
+	});
+	jQuery(window).resize(function() {
+	    if(jQuery(window).width()>=768 && jQuery(".infinite-loader").length==0){
+	      jQuery('<div class="infinite-loader"><span class="loading"><i class="ajax-loader small animate-spin"></i><?php echo __("Loading ..."); ?></span><a href="javascript:void(0)" class="btn-load-more"><?php echo __("Load More ..."); ?></a></div>').insertAfter('#layer-product-list .products-grid');
+	    }else{
+	      if(jQuery(".infinite-loader").length >0){
+	        jQuery('.infinite-loader').remove();
+	      }
+	    }
+	});
+
+
+Kamp Email
+==============
+
+(15:52) Dhaval Vaghela(Magento-TL): bdm@dynamicdreamz.com
+(15:52) Dhaval Vaghela(Magento-TL): info@dynamicdreamz.com
+(15:53) Dhaval Vaghela(Magento-TL): programmer10@dynamicdreamz.com
+
+(12:19:46) Dhaval Vaghela(Magento-TL): slack login : ----------------- info@dynamicdreamz.com dynamic@123
+(12:20:25) Dhaval Vaghela(Magento-TL): https://app.asana.com/0/511471416106344/1165911933793481
+(12:22:39) Dhaval Vaghela(Magento-TL): https://app.asana.com/0/511471416106344/1166813715241881
+(12:24:30) Dhaval Vaghela(Magento-TL): 172.104.233.146 root Simon870304! /var/www/vhosts/kampetorpmarin.se/httpdocs https://kampetorpmarin.se/kontrollpanel devdd devdd@1234 
+(14:08:57) vishal_sahodiya: we have fixed mobile menu issue please check the screenshot:https://prnt.sc/ri8sqj
+
+
+
+levrage chache pehla ni speed
+==============================
+
+https://prnt.sc/rkxr3p
+
+
+
+levrage chache pachhini 
+
+
+
+
+To display more attribute in the sidebar you have to go, Admin >> Catalog >> Attributes >> Manage Attribute then search attribute which you want to display in the sidebar. only "Dropdown" type Attribute will be visible on the front. Please some settings you have to fill to display attribute on the frontend. The screenshot:
+https://prnt.sc/rl3fsq
+
+https://prnt.sc/rl3j4d
+
+
+Right Now we have done Navigation Filter on dddemo site.
+
+Output link:http://dddemo.net/magento/poweredbicyclesn/test-569.html
+
+Please check if it is ok then let me know so we can upload all changes on live.
+
+
+Time Spent
+
+
+Here is another thing to do: I'm trying to activate Klarna payments. The transaction always fails at some point. I have contacted Klarna support, they think that the order button overrides some methods. Maybe you can figure out a solution. Klarna support mentioned something about a authorize() method that should be appended to the button. I have activated Klarna on the test system with a developer account.
+
+
+https://gaurav.audionetworx1.timmeserver.de/jmhgshchlaezmxfho/
+enbgdfgaurav
+
+
+ktmIEwqA0NWS2fmWZBzOsmFMQca
+
+
+
+new ---ktmIEwqA0NWS2fmWZBzOsmFMQcaF
+
+ssh
+
+gaurav.audionetworx1.timmeserver.de
+
+daxgauravkhdftezjf
+
+RmRSJMCFHGHN1JTBthVKyhSVujBOOGQW
+
+
+
+
+Dailay Report
+=====================
+
+Vishal:
+
+Time : 09:00 to 09:30 -- Connection issue (i have contact to jatinbhai and solved problem).
+
+Time : 09:30 to 11:00 -- Vitalswholesale [product page issue].
+       Status:solved
+
+Time : 11:00 : 01:00 --  Powerbicycle [Navigation Filter task discuss with dhaval bhai and check client site and give feedback to client].
+
+Time : 01:00 : 01:45 --  Break
+
+Time : 01:45 : 06:00 -- Free
+
+
+
+
+
+
+Vishal:
+
+Time: 09:00 to 10:00 -- Vitalswholesale [Serch about ADA compliance for the website and give an answer to the client].
+
+Time : 10:00 to 01:00 -- Free
+
+Time : 01:00 : 02:00 --  Break
+
+Time: 02:00: 04:30 --   Free
+
+Time : 04:30 : 06:00 --  Newsllter import Module 
+
+
+
+https://blog.mdnsolutions.com/magento-2-import-newsletter-subscriber-programmatically/
+
+
+
+Vishal:
+
+09:00 to 10:00 -- Vitalswholesale [Serch about ADA compliance for the website and give an answer to the client].
+
+10:00 to 01:00 -- Free
+
+01:00 to 02:00 --  Break
+
+02:00 to 04:30 --   Free
+
+05:00 to 06:00 --  Newsllter import Module 
+
+
+Vishal:
+
+09:00 to 01:00 -- Newsllter import Module.
+
+01:00 to 02:00 -- Break 
+
+02:00 to 3:00 --  Newsllter import Module.
+
+03:00 to 04:00 -- Free
+
+04:00 to 06:00 -- ADA Compilation [Vital]
+
+before:https://prnt.sc/rs3a5c
+
+
+Rinkesh Patel windows 10:https://prnt.sc/s0f6hr
+vishal udhnavala:https://lh3.googleusercontent.com/-H6gtPVegURw/XpfsrpPBjwI/AAAAAAAAAQQ/ryEwER6E8Yc2ClhpN5i5lkF_HCC5IkhbQCK8BGAsYHg/s0/2020-04-15.png
+
+
+Firefox :https://prnt.sc/s4kj93
+Ie:https://prnt.sc/s50c3m
+
+
+19984,19993,20002,20011,20017,20111,20120,20130,20138,20147
+
+script
+
+
+
+https://ld-magento-72.template-help.com/magento_62000
+
+
+
+https://gaurav.audionetworx2.timmeserver.de/
+https://gaurav.audionetworx2.timmeserver.de/l2b-shgr-knfs/
+User: Gh3nkDq-gaurav
+Password: 4JLseJBe7doH11mtVZ-pjOesIcb5Xdoo
+
+
+SSH:
+gaurav.audionetworx2.timmeserver.de
+User: c680132gaurav2nKg4hDk
+Password: 5GqedCd+6gwxDTNwEDzGGGuDsWhL1wz7X
+
+
+
+Lawranceordnance
+==========
+
+https://url.upwork.com/_012M2yPN3pE93FcR_hn7I_tHPvVXpCVLdT
+
+Paypal Credential
+=========================
+
+Merchant Account Id :lawranceordnance@bigpond.com
+
+API username:lawranceordnance_api1.bigpond.com
+
+API password:3H8MALZ5UHTQHBWH
+
+Signature:AFcWxV21C7fd0v3bYYYRCpSSRl31ADR6D5X602-UFgrI9Tkh5vUI2BM6
+
+
+
+This is the post activation key 34df7ca5e4e39b83efabe1448b6e4262
+
+Guide Doc Url:https://drive.google.com/file/d/1lTHEYdJuHaANdmYiDKSvc1rYyUEhlj3d/view
+
+
+
+AFcWxV21C7fd0v3bYYYRCpSSRl31ADR6D5X602-UFgrI9Tkh5vUI2BM6
+
+
+Hello Sir,
+
+http://web2.dddemo.net/lawrence
+----------------------------------------------
+
+We have configured all payment Method(MIGS,Check/Money order,Paypal) same as live site.
+
+Screenshot:https://prnt.sc/t5dzyx 
+
+Thank you
+Vishal Sahodiya
+
+
+
+
+(17:29) Chirag Prajapati: /run/user/1001/gvfs/smb-share:server=192.168.0.85,share=htdocs/lawranceordnance_final/app/code/Biztech/Auspost/Observer/checkKey.php
+(17:29) Chirag Prajapati: /run/user/1001/gvfs/smb-share:server=192.168.0.85,share=htdocs/lawranceordnance_final/app/code/Biztech/Auspost/Model/Config/Source/WebsiteStoreview.php
+
+
+Worksnap:
+
+Screenshot: https://www.worksnaps.com/app/track_time.cgi?project=0&user=64456
+
+BlueMoutain
+==========================
+http://www.bluemountainorganics.com/kalebtr
+admin
+blue@Secure!123
+
+allorder.csv/opt/lampp/htdocs/magento2.3.5-p1/var/tmp
+
+
+
+Lawerence Admin
+========
+https://lawranceordnance.com/castera
+
+jimowl
+
+hQ}`4c,[]6/'Jw-j
+
+
+ P.O. Box 7237 Alexandria 2015 N.S.W. Australia
+
+
+
+
+
+
+
+ To Set up tracker , Please follow below steps: 
+
+1. Please SignUp With Give Company EMail ID And Set Password to  dynamic@123  (For all users) On Below Link :
+https://www.worksnaps.com/app/register_user.cgi?source=web&webpage_version=3&cls=1
+   -    Select TimeZone +5:30 India
+   -     Subscription Plan :  Free (1 User, 1 Project)  
+
+2. After Login Create one  Project named : DD Project
+   Create oneTask :DD Task, which you can change as you go.
+
+After All These Process
+
+Please Download And Install Software From Below Link :
+
+https://www.worksnaps.com/www/download.shtml
+
+For Ubuntu User Please Follow :
+https://www.worksnaps.com/www/download_instruction_linux.shtml
+
+
+
+gaurav.audionetworx2.timmeserver.de
+User: c680132gaurav2nKg4hDk
+Password: 5GqedCd+6gwxDTNwEDzGGGuDsWhL1wz7X
+
+
+https://gaurav.audionetworx2.timmeserver.de/l2b-shgr-knfs/
+
+Gh3nkDq-gaurav
+
+4JLseJBe7doH11mtVZ-pjOesIcb5Xdoo
+
+
+P.O. BOX 7237
+Alexandria NSW 2015
+Australia
+T | 02 9212 5673
+ABN | 65 085 174 803
+
+Alexandria
+
+
+sales/store/logo/default
+
+
+
+
+cb54401d14d6779e21b92cae5b49975744d2c55ce0e04d4f039e9e8d0fb7d525:QZuRROsLy0lLA84BBKwYT8z6af35wbcz:1
+
+
+
+
+-6         ecf58fa602eeb668c500ea36b036bc74:Z9pFOVfv8nUKFKU1vlmqOBhOat2jqHyD:0
+
+j.a.howell@bigpond.com
+
+
+laword.lawranceordnance.com:2087
+root
+ebotnR1vFdIRn7
+
+calmik1.dev3@gmail.com
+
+
+
+
+ssh -- lawerence
+========================
+Host : lawranceordnance.com
+port: 22102
+user:  lawrance   
+Pwd: ]=uY1qGsfZv=
+key : id_rsa_dev
+
+
+
+Lawerence Order Isssue Solution:
+
+https://meetanshi.com/blog/undefined-method-in-getconfigurableattributecollection-in-magento-2-3-3/
+https://community.magento.com/t5/Magento-2-x-Technical-Issues/Magento-2-3-1-checkout-error-Uncaught-Error-Call-to-undefined/m-p/137132#M10107
+
+
+
+ https://app.teamwave.com/pm/#/projects/39742/taskgroups   
+
+
+
+ Paypal Order Duplicate issue.
+ ===========================================
+
+ https://skynix.co/resources/duplicated-paypal-orders-in-magento-2-free-fix
+
+
+ https://i-connect.ie/admin_ms/admin
+
+ devdyna/devdyna@123
+
+ 
+
+ Elastic Search
+ =================
+ https://phoenixnap.com/kb/install-elasticsearch-ubuntu
+
+
+
+ We have completed this changes. This changes is affected on live site too. So we have comments this changes. Please let us know whenever you want to check this functionality. We will enable this functionality for temporary so you can check and verify it.
+
+
+
+ Magento Admin panel
+https://macaranda.es/admin_agyn5x
+username: admin
+password: ,xEoWkL*Zrc3
+
+
+
+
+Marketplace Login pass:VD1771vd@12345

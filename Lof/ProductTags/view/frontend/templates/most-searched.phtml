@@ -1,0 +1,25 @@
+<?php 
+$objectManager   = \Magento\Framework\App\ObjectManager::getInstance();
+$tagCollection = $objectManager->get('Lof\ProductTags\Block\Tag\Product\ListProduct')->getTagHomeCollection();
+?>
+<div class="most-searched-inner container">
+	<div class="title-sec">
+		<h2 class="section-title"><?php echo __('Our most searched for keywords') ?></h2>
+	</div>
+	<div class="content-sec">
+		<div class="tag-cloud tag-cloud--center">
+            <ul class="tag-cloud__wrapper">
+                <?php if(count($tagCollection) > 0) { 
+                    ?>
+                    <?php foreach ($tagCollection as $tagData) { ?>
+                            <li> <a class="tag-cloud__link <?= $tagData['cssClass'];?>" href="<?php echo $this->getBaseUrl().'tags/'.$tagData['identifier']; ?>"><?php echo ucfirst($tagData['tag_title']) ?></a>  </li>
+                <?php } ?>
+            <?php } ?>
+        </ul>
+        <p class="show show-more">Show more</p>
+    </div>
+    <div class="view-more-font-btn">
+      <a href="<?php echo $this->getBaseUrl() .'tags/index/' ?>" class="button">View More Keywords</a>
+  </div>
+</div>
+</div>

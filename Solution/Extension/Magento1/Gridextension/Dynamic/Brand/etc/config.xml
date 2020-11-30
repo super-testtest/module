@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dynamic_Brand>
+            <version>1.0.0</version>
+        </Dynamic_Brand>
+    </modules>
+
+    <global>
+        <models>
+            <dynamic_brand>
+                <class>Dynamic_Brand_Model</class>
+                <resourceModel>dynamic_brand_mysql4</resourceModel>
+            </dynamic_brand>
+            <dynamic_brand_mysql4>
+                <class>Dynamic_Brand_Model_Mysql4</class>
+                <entities>
+                    <brand>
+                        <table>dynamic_brand</table>
+                    </brand>
+                </entities>
+            </dynamic_brand_mysql4>
+        </models>
+
+        <blocks>
+            <dynamic_brand>
+                <class>Dynamic_Brand_Block</class>
+            </dynamic_brand>
+        </blocks>
+
+        <helpers>
+            <dynamic_brand>
+                <class>Dynamic_Brand_Helper</class>
+            </dynamic_brand>
+        </helpers>
+
+        <resources>
+            <dynamic_brand_setup>
+                <setup>
+                    <module>Dynamic_Brand</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </dynamic_brand_setup>
+            <dynamic_brand_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </dynamic_brand_write>
+            <dynamic_brand_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </dynamic_brand_read>
+        </resources>
+		<template>
+            <email>
+                <dynamic_brand_options_mail_to_store_template translate="label">
+                    <label>Notification Tesimonials</label>
+                    <file>dynamic_brand_options_mail_to_store_template.html</file>
+                    <type>html</type>
+                </dynamic_brand_options_mail_to_store_template>
+            </email>
+        </template>
+    </global>
+	<default>
+		<captcha>
+			<frontend>
+				<areas>
+					<dynamic_brand>
+						<label>Brands Page</label>
+					</dynamic_brand>
+				</areas>
+			</frontend>
+		</captcha>
+		<customer>
+			<captcha>
+				<enable>1</enable>
+				<always_for>
+					<dynamic_brand>1</dynamic_brand>
+				</always_for>
+				<forms>dynamic_brand</forms>
+			</captcha>
+		</customer>
+		<dynamic_brand>
+			<general>
+				<num_sidebar>4</num_sidebar>
+				<time_effect>5</time_effect>
+			</general>
+		</dynamic_brand>
+	</default>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <dynamic_brand after="Mage_Adminhtml">Dynamic_Brand_Adminhtml</dynamic_brand>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+		<menu>
+            <dynamic_brand>
+                <title>Brand</title>
+                <sort_order>76</sort_order>
+                <children>
+                    <brand>
+                        <title>Manage Brand</title>
+                        <sort_order>0</sort_order>
+                        <action>adminhtml/brand</action>
+                    </brand>
+                    <!-- <configs>
+                        <title>Configs</title>
+                        <sort_order>1</sort_order>
+                        <action>adminhtml/system_config/edit/section/dynamic_brand</action>
+                    </configs> -->
+                </children>
+            </dynamic_brand>
+        </menu>
+		<acl>
+            <resources>
+                <admin>
+                    <children>
+                        <dynamic_brand>
+							<title>Brand</title>
+							<sort_order>76</sort_order>
+							<children>
+								<brand>
+									<title>Manage Brand</title>
+									<sort_order>0</sort_order>
+									<action>adminhtml/brand</action>
+								</brand>
+								<!-- <configs>
+									<title>Configs</title>
+									<sort_order>1</sort_order>
+									<action>adminhtml/system_config/edit/section/dynamic_brand</action>
+								</configs> -->
+							</children>
+						</dynamic_brand>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <dynamic_brand>
+                    <file>dynamic_brand.xml</file>
+                </dynamic_brand>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Dynamic_Brand>
+                    <files>
+                        <default>Dynamic_Brand.csv</default>
+                    </files>
+                </Dynamic_Brand>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <routers>
+            <dynamic_brand>
+                <use>standard</use>
+                <args>
+                    <module>Dynamic_Brand</module>
+                    <frontName>brands</frontName>
+                </args>
+            </dynamic_brand>
+        </routers>
+        <layout>
+            <updates>
+                <dynamic_brand>
+                    <file>dynamic_brand.xml</file>
+                </dynamic_brand>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Dynamic_Brand>
+                    <files>
+                        <default>Dynamic_Brand.csv</default>
+                    </files>
+                </Dynamic_Brand>
+            </modules>
+        </translate>
+    </frontend>
+</config>

@@ -1,0 +1,123 @@
+<?php
+/**
+ *
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+namespace Dckap\CustomFields\Controller\Adminhtml\Order;
+
+use Magento\Backend\App\Action\Context;
+use Magento\Backend\Model\View\Result\Redirect;
+use Magento\Directory\Model\RegionFactory;
+use Magento\Sales\Api\OrderManagementInterface;
+use Magento\Sales\Api\OrderRepositoryInterface;
+use Magento\Sales\Api\Data\OrderAddressInterface;
+use Magento\Sales\Controller\Adminhtml\Order;
+use Magento\Sales\Model\Order\Address as AddressModel;
+use Psr\Log\LoggerInterface;
+use Magento\Framework\Registry;
+use Magento\Framework\App\Response\Http\FileFactory;
+use Magento\Framework\Translate\InlineInterface;
+use Magento\Framework\View\Result\PageFactory;
+use Magento\Framework\Controller\Result\JsonFactory;
+use Magento\Framework\View\Result\LayoutFactory;
+use Magento\Framework\Controller\Result\RawFactory;
+use Magento\Framework\Exception\LocalizedException;
+use Magento\Framework\App\ObjectManager;
+
+/**
+ * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
+ */
+class DeliverydateSave extends Order
+{
+    /**
+     * Authorization level of a basic admin session
+     *
+     * @see _isAllowed()
+     */
+    const ADMIN_RESOURCE = 'Magento_Sales::actions_edit';
+
+    /**
+     * @var RegionFactory
+     */
+    private $regionFactory;
+    /**
+     * @param Context $context
+     * @param Registry $coreRegistry
+     * @param FileFactory $fileFactory
+     * @param InlineInterface $translateInline
+     * @param PageFactory $resultPageFactory
+     * @param JsonFactory $resultJsonFactory
+     * @param LayoutFactory $resultLayoutFactory
+     * @param RawFactory $resultRawFactory
+     * @param OrderManagementInterface $orderManagement
+     * @param OrderRepositoryInterface $orderRepository
+     * @param LoggerInterface $logger
+     * @param RegionFactory|null $regionFactory
+     *
+     * @SuppressWarnings(PHPMD.ExcessiveParameterList)
+     */
+    public function __construct(
+        Context $context,
+        Registry $coreRegistry,
+        FileFactory $fileFactory,
+        InlineInterface $translateInline,
+        PageFactory $resultPageFactory,
+        JsonFactory $resultJsonFactory,
+        LayoutFactory $resultLayoutFactory,
+        RawFactory $resultRawFactory,
+        OrderManagementInterface $orderManagement,
+        OrderRepositoryInterface $orderRepository,
+        LoggerInterface $logger,
+        RegionFactory $regionFactory = null
+    ) {
+        $this->regionFactory = $regionFactory ?: ObjectManager::getInstance()->get(RegionFactory::class);
+        parent::__construct(
+            $context,
+            $coreRegistry,
+            $fileFactory,
+            $translateInline,
+            $resultPageFactory,
+            $resultJsonFactory,
+            $resultLayoutFactory,
+            $resultRawFactory,
+            $orderManagement,
+            $orderRepository,
+            $logger
+        );
+    }
+
+    /**
+     * Save order address
+     *
+     * @return Redirect
+     */
+    public function execute()
+    {
+
+        $orderId = $this->getRequest()->getParam('order_id');
+	//$post = $this->getRequest()->getParams();
+        //print_r($post);exit;
+        $order = $this->_objectManager->create(
+            'Magento\Sales\Api\Data\OrderInterface'
+        )->load($orderId);
+        $data = $this->getRequest()->getParams();
+ 	$newDelivery = $data['date_custom_shipping_field'];
+        $resultRedirect = $this->resultRedirectFactory->create();
+        if ($newDelivery !='' && $order->getId()) {
+            $order->setData('date_custom_shipping_field',$newDelivery);
+            try {
+                $order->save();
+                $this->messageManager->addSuccess(__('You updated the order SHIP COLLECT.'));
+                return $resultRedirect->setPath('sales/*/view', ['order_id' => $order->getId()]);
+            } catch (LocalizedException $e) {
+                $this->messageManager->addError($e->getMessage());
+            } catch (\Exception $e) {
+                $this->messageManager->addException($e, __('We can\'t update the order SHIP COLLECT right now.'));
+            }
+            return $resultRedirect->setPath('sales/*/view', ['order_id' => $order->getId()]);
+        } else {
+            return $resultRedirect->setPath('sales/*/view', ['order_id' => $order->getId()]);
+        }
+    }
+}

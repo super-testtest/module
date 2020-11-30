@@ -1,0 +1,153 @@
+Solution
+==============================
+
+1)Customer Import/Expoert Download File issue.
+
+/opt/lampp/htdocs/magento233/vendor/magento/module-import-export/Controller/Adminhtml/Export/Export.php
+
+public function execute()
+{
+	if ($this->getRequest()->getPost(ExportModel::FILTER_ELEMENT_GROUP)) { 
+		try { 
+			$params = $this->getRequest()->getParams(); $model = $this->_objectManager->create(\Magento\ImportExport\Model\Export::class); $model->setData($this->getRequest()->getParams()); $this->sessionManager->writeClose();
+			return $this->fileFactory->create(
+			$model->getFileName(),
+			$model->export(),
+			\Magento\Framework\App\Filesystem\DirectoryList::VAR_DIR,
+			$model->getContentType()
+			);
+
+			/** @var ExportInfoFactory $dataObject */
+			$dataObject = $this->exportInfoFactory->create(
+			$params['file_format'],
+			$params['entity'],
+			$params['export_filter']
+			);
+
+			$this->messagePublisher->publish('import_export.export', $dataObject);
+			$this->messageManager->addSuccessMessage(
+			__('Message is added to queue, wait to get your file soon')
+			);
+		} catch (\Exception $e) {
+			$this->_objectManager->get(\Psr\Log\LoggerInterface::class)->critical($e);
+			$this->messageManager->addError(__('Please correct the data sent value.'));
+		}
+	} else {
+		$this->messageManager->addError(__('Please correct the data sent value.'));
+	}
+	/** @var \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
+	$resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
+	$resultRedirect->setPath('adminhtml/*/index');
+	return $resultRedirect;
+}
+
+
+
+2) Log write Code
+
+
+	$writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');
+	$logger = new \Zend\Log\Logger();
+	$logger->addWriter($writer);
+	$logger->info($e->getMessage());
+	
+3)Order Export Module :https://github.com/gautamkeshri/mage2OrderExport
+
+
+
+4)Worldpay 
+==============
+
+merchand id :506fbaf3-85a4-42d9-8f99-efa930d6ccc8
+
+secret key:T_S_b46ebe2d-d6fa-4f3d-b67e-095a8f3a0431
+client key:T_C_60487557-5ea8-4c37-b793-bb4f4ba662db
+
+https://online.worldpay.com/settings/general
+
+testing credential :http://support.worldpay.com/support/kb/bg/testandgolive/tgl0000.html?_ga=2.138414259.1866099693.1566463272-2026890985.1566463272N
+
+
+
+
+
+5) system configuration Tab label Image not showing
+======================================================
+
+
+/vendor/magento/module-config/view/adminhtml/templates/system/config/tabs.xml
+
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Magento\Config\Block\System\Config\Tabs */
+?>
+
+<?php if ($block->getTabs()) : ?>
+    <div id="<?= $block->escapeHtmlAttr($block->getId()) ?>" class="config-nav">
+        <?php
+        /** @var $_tab \Magento\Config\Model\Config\Structure\Element\Tab */
+        foreach ($block->getTabs() as $_tab) :
+            $activeCollapsible = false;
+            foreach ($_tab->getChildren() as $_section) {
+                if ($block->isSectionActive($_section)) {
+                    $activeCollapsible = true;
+                }
+            } ?>
+
+            <div class="config-nav-block admin__page-nav _collapsed
+                <?php if ($_tab->getClass()) : ?>
+                    <?= $block->escapeHtmlAttr($_tab->getClass()) ?>
+                <?php endif ?>"
+                 data-mage-init='{"collapsible":{"active": "<?= $block->escapeHtmlAttr($activeCollapsible) ?>",
+                 "openedState": "_show",
+                 "closedState": "_hide",
+                 "collapsible": true,
+                 "animate": 200}}'>
+                <div class="admin__page-nav-title title _collapsible" data-role="title">
+                    <strong><?= $block->escapeHtml($_tab->getLabel()) ?></strong>
+                </div>
+
+                <ul class="admin__page-nav-items items" data-role="content">
+                    <?php $_iterator = 1; ?>
+                    <?php
+                    /** @var $_section \Magento\Config\Model\Config\Structure\Element\Section */
+                    foreach ($_tab->getChildren() as $_section) : ?>
+                        <li class="admin__page-nav-item item
+                            <?= $block->escapeHtml($_section->getClass()) ?>
+                            <?php if ($block->isSectionActive($_section)) : ?> _active<?php endif ?>
+                            <?= $_tab->getChildren()->isLast($_section) ? ' _last' : '' ?>">
+                            <a href="<?= $block->escapeUrl($block->getSectionUrl($_section)) ?>"
+                               class="admin__page-nav-link item-nav">
+                               <span><?= $block->escapeHtml($_section->getLabel()) ?></span>
+                            </a>
+                        </li>
+                        <?php $_iterator++; ?>
+                    <?php endforeach; ?>
+                </ul>
+
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
+
+
+
+6)Product gallry Image Slier Autoplay
+
+/opt/lampp/htdocs/westlife-underwear/vendor/magento/module-catalog/Block/Product/View/GalleryOptions.php
+
+Chnage: varible add karvano etle GallaryOption.php ovvride karvi pade
+
+$optionItems['autoplay'] = $this->getVar("gallery/autoplay");
+
+
+
+/opt/lampp/htdocs/westlife-underwear/vendor/magento/theme-frontend-luma/etc/view.xml
+
+Chage:ek element add karvano etle thay jay
+
+<var name="autoplay">true</var>
